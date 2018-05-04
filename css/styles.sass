@@ -452,7 +452,7 @@ section
 
 .panel--desc
     padding-left: 7px
-    font-style: italic
+    //font-style: italic
     font-size: 18px
     color: $color
 
@@ -462,12 +462,117 @@ section
 
 .work--slider
     position: relative
+    padding: 0
+
+    @media (min-width: 670px)
+        position: relative
+        right: 40px
+        width: calc(100% + 80px)
 
 .work--item
-    padding: 5px
+    overflow: hidden
+    padding: 20px
+    position: relative
 
+.work--item-heading
+    display: none
+
+.work--center
+    position: relative
+
+.work--img img
+    width: 100%
+
+.slick-dots
+    padding: 0
+    text-align: center
+
+    li
+        display: inline-block
+        padding: 0 3px
+
+        &:before
+            content: ''
+            display: block
+            width: 10px
+            height: 10px
+            border-radius: 100%
+            background: $color-accent
+
+        &.slick-active:before
+            background: $accent
+
+        button
+            text-indent: -99999px
+            background: none
+            border: none
 
 // image
+
+.skills--title
+    line-height: 47px
+
+.portfolio--img
+    position: absolute
+    width: 145px
+    right: 95px
+    top: -29px
+
+.contact--list
+    padding: 0
+
+    li
+        list-style: none
+        padding-bottom: 10px
+
+        .fa-envelope, .fa-phone
+            padding-right: 3px
+            color: $accent
+
+.contact--title
+    font-style: italic
+    text-transform: uppercase
+    font-size: 18px
+    margin-bottom: 12px
+    margin-top: 30px
+
+.skills--list
+    padding: 0
+
+
+    li
+        list-style: none
+        margin-bottom: 25px
+
+        display: -webkit-box
+        display: -moz-box
+        display: -webkit-flex
+        display: -ms-flexbox
+        display: flex
+
+        align-items: center
+        -webkit-align-items: center
+
+        font-style: normal
+
+        width: 50%
+        float: left
+
+        &:nth-child(2n+1)
+            clear: left
+
+.skill--icon
+    width: 50px
+    display: inline-block
+    padding: 0 10px 0 0
+    float: left
+
+    img
+        width: 40px
+
+.skill--item
+    line-height: 20px
+    display: block
 
 // footer
 
@@ -481,3 +586,18 @@ footer
         position: absolute
         bottom: 0
         left: 0
+
+.foot--wrap
+    display: -webkit-box
+    display: -moz-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+
+    justify-content: space-between
+
+    padding: 0
+    margin: 0
+
+    li
+        list-style: none

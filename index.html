@@ -8,21 +8,13 @@
     <title>Title</title>
 
     <!-- Bootstrap Base -->
-    <link rel="stylesheet" type="text/css" href="/vendors/bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="/vendors/bootstrap/css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap-grid.css" />
 
-    <!-- Fullpage.js - https://github.com/alvarotrigo/fullpage.js -->
-    <!-- <link rel="stylesheet" type="text/css" href="vendors/fullPage/jquery.fullPage.css" /> -->
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-    <!--<script src="/vendors/fullPage/jquery.easings.min.js"></script>-->
-    <!--<script src="/vendors/fullPage/scrolloverflow.min.js"></script>-->
-    <!--<script src="/vendors/fullPage/jquery.fullPage.js"></script>-->
+    <!-- Slick Slider CSS- http://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-    <!-- Slick Slider - http://kenwheeler.github.io/slick/ -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!--<script src="/vendors/slickSlider/slick.min.js" type="text/javascript" charset="utf-8"></script>-->
-
-    <!-- Main Site CSS & JS -->
+    <!-- Main Site CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <!-- Typekit Fonts -->
@@ -62,7 +54,7 @@
             </ul>
         </nav>
 
-        <div class="social">
+        <div class="social" style="display: none;">
             <ul class="social--container">
                 <li class="social--item">
                     <a href="#" class="baskerville btn italic">resume & digital portfolio</a>
@@ -71,7 +63,7 @@
         </div>
     </header>
 
-    <div class="mail--button btn">
+    <div class="mail--button btn" style="display: none;">
         <a href="#"><i class="fas fa-envelope"></i></a>
     </div>
 
@@ -119,43 +111,40 @@
 
                     <div class="panel--slider">
                         <ul class="work--slider">
-                            <li class="work--item">
-                                <div style="background: #005cbf; min-height: 300px"></div>
+                            <li class="work--item work--center">
+                                <div class="work--img">
+                                    <img src="img/nerdly-plush.png">
+                                </div>
                                 <div class="work--item-heading">
-                                    Test Heading
+                                    Nerdly Plush
+                                </div>
+                            </li>
+                            <li class="work--item work--center">
+                                <div  class="work--img">
+                                    <img src="img/realestatewebsite.png">
+                                </div>
+                                <div class="work--item-heading">
+                                    Johnston Realty
                                 </div>
                             </li>
                             <li class="work--item">
-                                <div style="background: #005cbf; min-height: 300px"></div>
-                                <div class="work--item-heading">
-                                    Test Heading
+                                <div class="work--img">
+                                    <img src="img/OITV.jpg">
                                 </div>
-                            </li>
-                            <li class="work--item">
-                                <div style="background: #005cbf; min-height: 300px"></div>
                                 <div class="work--item-heading">
-                                    Test Heading
+                                    OITV Site
                                 </div>
                             </li>
 
                             <li class="work--item">
-                                <div style="background: #005cbf; min-height: 300px"></div>
+                                <div class="work--img">
+                                    <img src="img/christmas-lunch.png">
+                                </div>
                                 <div class="work--item-heading">
-                                    Test Heading
+                                    Posters
                                 </div>
                             </li>
-                            <li class="work--item">
-                                <div style="background: #005cbf; min-height: 300px"></div>
-                                <div class="work--item-heading">
-                                    Test Heading
-                                </div>
-                            </li>
-                            <li class="work--item">
-                                <div style="background: #005cbf; min-height: 300px"></div>
-                                <div class="work--item-heading">
-                                    Test Heading
-                                </div>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -169,15 +158,25 @@
                     <div class="panel--primary--container">
                         <div class="panel--title --reverse">
                             <h3 class="panel--subtitle baskerville">how.</h3>
-                            <h1 class="baskerville">
+                            <h1 class="baskerville skills--title">
                                 What Makes
                                 <span class="subtext">
                                     Me Tick?
                                 </span>
                             </h1>
+                            <img src="img/portfolio.png" class="portfolio--img">
                         </div>
-                        <p class="baskerville panel--desc">
+                        <p class="baskerville panel--desc" style="padding-left: 0;">
                             Short general description of other stuff not sure yet what is going here but I will figure it out.
+                            <h4 class="baskerville contact--title">Get in Contact.</h4>
+                            <ul class="contact--list">
+                                <li>
+                                    <i class="fas fa-envelope"></i> rczilok@gmail.com
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i> 604.356.6755
+                                </li>
+                            </ul>
                         </p>
                     </div>
                 </div>
@@ -185,27 +184,68 @@
                 <div class="panel--secondary">
                     <div class="panel--title --reverse">
                         <h1 class="baskerville">
-                            Skill set
+                            Skillset
                         </h1>
+                        <ul class="skills--list baskerville">
+                            <li>
+                                <span class="skill--icon skill--ph"><img src="img/skills/photoshop.png"></span>
+                                <span class="skill--item">Photoshop</span>
+                            </li>
+                            <li>
+                                <span class="skill--icon skill--ph"><img src="img/skills/illustrator.svg"></span>
+                                <span class="skill--item">Illustrator</span>
+                            </li>
+                            <li>
+                                <span class="skill--icon skill--ph"><img src="img/skills/indesign.jpg"></span>
+                                <span class="skill--item">InDesign</span>
+                            </li>
+                            <li>
+                                <span class="skill--icon skill--ph"><img src="img/skills/html5.png"></span>
+                                <span class="skill--item">HTML 5</span>
+                            </li>
+                            <li>
+                                <span class="skill--icon skill--ph"><img src="img/skills/css3.png"></span>
+                                <span class="skill--item">CSS 3</span>
+                            </li>
+                            <li>
+                                <span class="skill--icon skill--ph"><img src="img/skills/js.svg"></span>
+                                <span class="skill--item">Javascript</span>
+                            </li>
+
+                            <li>
+                                <span class="skill--icon skill--ph"><img src="img/skills/photoshop.png"></span>
+                                <span class="skill--item">UI Design</span>
+                            </li>
+                            <li>
+                                <span class="skill--icon skill--ph"><img src="img/skills/photoshop.png"></span>
+                                <span class="skill--item">Responsive Web Design</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
             </div>
 
             <footer class="">
-                <div class="foot--wrap baskerville">
-                    (c) contents here. License for here.
-                </div>
+                <ul class="foot--wrap baskerville">
+                    <li>(c) contents here. License for here.</li>
+                    <li><i class="fas fa-envelope"></i> rczilok@gmail.com</li>
+                </ul>
             </footer>
         </div>
     </div>
-    <script src="/vendors/jquery-3.3.1.min.js"></script>
+    <script src="vendors/jquery-3.3.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/vendors/fullPage/jquery.easings.min.js"></script>
-    <script src="/vendors/fullPage/scrolloverflow.min.js"></script>
-    <script src="/vendors/fullPage/jquery.fullPage.js"></script>
-    <script src="/vendors/slickSlider/slick.min.js" type="text/javascript" charset="utf-8"></script>
 
+    <!-- Fullpage.js - https://github.com/alvarotrigo/fullpage.js -->
+    <script src="vendors/fullPage/jquery.easings.min.js"></script>
+    <script src="vendors/fullPage/scrolloverflow.min.js"></script>
+    <script src="vendors/fullPage/jquery.fullPage.js"></script>
+
+    <!-- Slick Slider JS - http://kenwheeler.github.io/slick/ -->
+    <script src="vendors/slickSlider/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Main Site JS -->
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
