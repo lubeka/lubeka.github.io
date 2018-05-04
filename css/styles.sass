@@ -515,8 +515,14 @@ section
 .portfolio--img
     position: absolute
     width: 145px
-    right: 95px
+    left: 225px
     top: -29px
+
+    @media (max-width: 519px)
+        left: 190px
+
+    @media (max-width: 390px)
+        display: none
 
 .contact--list
     padding: 0
@@ -586,6 +592,9 @@ footer
         position: absolute
         bottom: 0
         left: 0
+
+    @media (max-width: 669px)
+        clear: both
 
 .foot--wrap
     display: -webkit-box
